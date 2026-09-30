@@ -1,10 +1,8 @@
 site_name: Practice Python for Beginners
 site_url: https://practice-python-for-beginners.github.io/
-repo_url: https://github.com/practice-python-for-beginners/practice-python-for-beginners.github.io
-repo_name: practice-python-for-beginners
 site_description: A complete 100-lesson roadmap for learning Python — from basics to enterprise apps, with live in-browser code runner and interactive challenges.
-site_author: Practice Python for Beginners Community
-copyright: "Licensed under GNU GPL3 · Maintained by Practice Python for Beginners Community"
+site_author: Aditya Pratap Bhuyan
+copyright: "Licensed under GNU GPL3 · Maintained by <a href='https://www.linkedin.com/in/adityabhuyan/'>Aditya Pratap Bhuyan</a>"
 
 theme:
   name: material
@@ -24,8 +22,8 @@ theme:
   font:
     text: Inter
     code: JetBrains Mono
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -41,8 +39,6 @@ theme:
     - content.tabs.link
     - announce.dismiss
     - toc.follow
-  icon:
-    repo: fontawesome/brands/github
 
 plugins:
   - search
@@ -222,5 +218,5 @@ nav:
       - "Lesson 98 · End-to-End Web App": 10-enterprise/98-end-to-end-webapp.md
       - "Lesson 99 · Realtime Dashboard": 10-enterprise/99-realtime-dashboard.md
       - "Lesson 100 · Complete Portfolio Project": 10-enterprise/100-complete-portfolio.md
-      - "ℹ️ About": about.md
-      - "🤝 Contributing": contributing.md
+  - "ℹ️ About": about.md
+  - "🤝 Contributing": contributing.md

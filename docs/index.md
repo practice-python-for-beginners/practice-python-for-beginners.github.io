@@ -179,4 +179,4 @@ That's it. The live code runner means you can start writing Python **right now**
 
 ---
 
-*Maintained by the [Practice Python for Beginners](https://github.com/practice-python-for-beginners) community &nbsp;·&nbsp; Licensed under GNU GPL3*
+*Maintained by [Aditya Pratap Bhuyan](https://www.linkedin.com/in/adityabhuyan/) &nbsp;·&nbsp; Licensed under GNU GPL3*

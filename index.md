@@ -200,8 +200,7 @@ This structured roadmap ensures that you build solid foundations before moving i
 
 ---
 
-**Maintained by:** *practice‑python‑for‑beginners GitHub Organization*  
-👥 *A project by Outlier Contributors & AI Model Playground Community*  
-📜 **License:** GNU GPL3 
+**Maintained by:** [Aditya Pratap Bhuyan](https://www.linkedin.com/in/adityabhuyan/)
+📜 **License:** GNU GPL3
 
 ---

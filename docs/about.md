@@ -39,10 +39,7 @@ The curriculum spans **100 lessons** across 10 progressive sections:
 
 ## 👥 Maintainers
 
-This project is maintained by the **Practice Python for Beginners GitHub Organization** — a community of developers, educators, and contributors passionate about making Python accessible to everyone.
-
-- **Contributors:** Outlier Contributors & AI Model Playground Community
-- **GitHub Org:** [practice-python-for-beginners](https://github.com/practice-python-for-beginners)
+This project is maintained by **[Aditya Pratap Bhuyan](https://www.linkedin.com/in/adityabhuyan/)** — passionate about making Python accessible to everyone.
 
 ---
 
