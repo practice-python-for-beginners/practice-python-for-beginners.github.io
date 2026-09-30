@@ -1,0 +1,301 @@
+/* ═══════════════════════════════════════════════════════════
+   Practice Python for Beginners — extra.css
+   Custom styles layered on top of Material for MkDocs
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Pyodide Runner Widget ─────────────────────────────────── */
+
+.pyodide-widget {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1.25rem 0;
+  background: var(--md-code-bg-color);
+  font-family: var(--md-code-font-family);
+}
+
+/* Editable code area */
+.pyodide-editor {
+  display: block;
+  width: 100%;
+  min-height: 6rem;
+  padding: 1rem;
+  border: none;
+  resize: vertical;
+  font-family: var(--md-code-font-family);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--md-code-fg-color);
+  background: var(--md-code-bg-color);
+  outline: none;
+  box-sizing: border-box;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  tab-size: 4;
+}
+
+.pyodide-editor:focus {
+  box-shadow: inset 0 0 0 2px var(--md-accent-fg-color);
+}
+
+/* Toolbar */
+.pyodide-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--md-default-fg-color--lightest);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Buttons */
+.pyodide-btn {
+  padding: 0.3rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.pyodide-btn:active {
+  transform: scale(0.97);
+}
+
+.pyodide-btn--run {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.pyodide-btn--run:hover {
+  opacity: 0.85;
+}
+
+.pyodide-btn--check {
+  background: #1a7f37;
+  color: #ffffff;
+}
+
+.pyodide-btn--check:hover {
+  opacity: 0.85;
+}
+
+.pyodide-btn--reset {
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  border-color: var(--md-default-fg-color--lighter);
+  margin-left: auto;
+}
+
+.pyodide-btn--reset:hover {
+  background: var(--md-default-fg-color--lightest);
+}
+
+/* Loader */
+.pyodide-loader {
+  padding: 0.6rem 1rem;
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  background: var(--md-code-bg-color);
+}
+
+/* Output panel */
+.pyodide-output {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  background: #0d1117;
+  color: #c9d1d9;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 18rem;
+  overflow-y: auto;
+}
+
+[data-md-color-scheme="default"] .pyodide-output {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+[data-md-color-scheme="slate"] .pyodide-output {
+  background: #010409;
+  color: #c9d1d9;
+}
+
+.pyodide-output--error {
+  color: #f85149;
+}
+
+/* Feedback (challenges) */
+.pyodide-feedback {
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  white-space: pre-wrap;
+  font-weight: 600;
+}
+
+.pyodide-feedback--pass {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.pyodide-feedback--fail {
+  background: #fee2e2;
+  color: #991b1b;
+  font-weight: 400;
+}
+
+[data-md-color-scheme="slate"] .pyodide-feedback--pass {
+  background: #052e16;
+  color: #86efac;
+}
+
+[data-md-color-scheme="slate"] .pyodide-feedback--fail {
+  background: #2d0000;
+  color: #fca5a5;
+}
+
+/* ── Hero section on landing page ──────────────────────────── */
+
+.hero-banner {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner .hero-sub {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* ── Section cards grid ─────────────────────────────────────── */
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.section-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1rem;
+  background: var(--md-default-bg-color);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+.section-card:hover {
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section-card .card-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.section-card .card-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: var(--md-default-fg-color);
+}
+
+.section-card .card-desc {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.5;
+}
+
+.section-card .card-count {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+}
+
+/* ── Feature strips on landing ─────────────────────────────── */
+
+.features-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin: 2rem 0;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 180px;
+}
+
+.feature-item .feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.feature-item .feature-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.feature-item .feature-sub {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ── Difficulty stars ──────────────────────────────────────── */
+
+.difficulty-stars {
+  color: #f59e0b;
+  letter-spacing: 0.05em;
+}
+
+/* ── Lesson nav buttons spacing ────────────────────────────── */
+
+.md-content .md-button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
