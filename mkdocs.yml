@@ -222,5 +222,5 @@ nav:
       - "Lesson 98 · End-to-End Web App": 10-enterprise/98-end-to-end-webapp.md
       - "Lesson 99 · Realtime Dashboard": 10-enterprise/99-realtime-dashboard.md
       - "Lesson 100 · Complete Portfolio Project": 10-enterprise/100-complete-portfolio.md
-  - About: about.md
-  - Contributing: contributing.md
+      - "ℹ️ About": about.md
+      - "🤝 Contributing": contributing.md
