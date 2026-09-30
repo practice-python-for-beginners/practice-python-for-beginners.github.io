@@ -1,0 +1,226 @@
+site_name: Practice Python for Beginners
+site_url: https://practice-python-for-beginners.github.io/
+repo_url: https://github.com/practice-python-for-beginners/practice-python-for-beginners.github.io
+repo_name: practice-python-for-beginners
+site_description: A complete 100-lesson roadmap for learning Python — from basics to enterprise apps, with live in-browser code runner and interactive challenges.
+site_author: Practice Python for Beginners Community
+copyright: "Licensed under GNU GPL3 · Maintained by Practice Python for Beginners Community"
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - announce.dismiss
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/practice-python-for-beginners
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  version:
+    provider: mike
+
+extra_javascript:
+  - javascripts/pyodide_runner.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - "🧱 Basics":
+      - "Section Overview": 01-basics/index.md
+      - "Lesson 1 · Python Basics & Syntax": 01-basics/01-python-basics-and-syntax.md
+      - "Lesson 2 · Strings & Numbers": 01-basics/02-strings-and-numbers.md
+      - "Lesson 3 · Data Structures": 01-basics/03-data-structures.md
+      - "Lesson 4 · Functions & Modules": 01-basics/04-functions-and-modules.md
+      - "Lesson 5 · File Handling": 01-basics/05-file-handling.md
+      - "Lesson 6 · Exception Handling": 01-basics/06-exception-handling.md
+      - "Lesson 7 · Intro to OOP": 01-basics/07-intro-to-oop.md
+      - "Lesson 8 · JSON & YAML": 01-basics/08-json-and-yaml.md
+      - "Lesson 9 · HTTP & Requests": 01-basics/09-http-and-requests.md
+      - "Lesson 10 · Simple REST API with Flask": 01-basics/10-simple-rest-api-flask.md
+  - "🗃️ Databases":
+      - "Section Overview": 02-databases/index.md
+      - "Lesson 11 · Flask CRUD App": 02-databases/11-flask-crud-app.md
+      - "Lesson 12 · Flask + SQLite": 02-databases/12-flask-sqlite.md
+      - "Lesson 13 · Intro to SQLAlchemy": 02-databases/13-intro-to-sqlalchemy.md
+      - "Lesson 14 · Flask Auth Basics": 02-databases/14-flask-auth-basics.md
+      - "Lesson 15 · Flask JWT Auth": 02-databases/15-flask-jwt-auth.md
+      - "Lesson 16 · Flask + MongoDB": 02-databases/16-flask-mongodb.md
+      - "Lesson 17 · Intro to FastAPI": 02-databases/17-intro-to-fastapi.md
+      - "Lesson 18 · FastAPI CRUD App": 02-databases/18-fastapi-crud-app.md
+      - "Lesson 19 · FastAPI JWT Auth": 02-databases/19-fastapi-jwt-auth.md
+      - "Lesson 20 · API Docs with Swagger": 02-databases/20-api-docs-swagger.md
+  - "🌐 Real-World APIs":
+      - "Section Overview": 03-real-world-apis/index.md
+      - "Lesson 21 · Weather API": 03-real-world-apis/21-weather-api.md
+      - "Lesson 22 · To-Do List API": 03-real-world-apis/22-todo-list-api.md
+      - "Lesson 23 · Currency Converter": 03-real-world-apis/23-currency-converter.md
+      - "Lesson 24 · News Aggregator": 03-real-world-apis/24-news-aggregator.md
+      - "Lesson 25 · Book Library API": 03-real-world-apis/25-book-library-api.md
+      - "Lesson 26 · Notes API with Auth": 03-real-world-apis/26-notes-api-auth.md
+      - "Lesson 27 · Image Upload API": 03-real-world-apis/27-image-upload-api.md
+      - "Lesson 28 · Email Sender Service": 03-real-world-apis/28-email-sender.md
+      - "Lesson 29 · URL Shortener": 03-real-world-apis/29-url-shortener.md
+      - "Lesson 30 · User Profile API": 03-real-world-apis/30-user-profile-api.md
+  - "⚙️ Async & CI/CD":
+      - "Section Overview": 04-async-cicd/index.md
+      - "Lesson 31 · Async Python Basics": 04-async-cicd/31-async-python-basics.md
+      - "Lesson 32 · FastAPI Background Tasks": 04-async-cicd/32-fastapi-background-tasks.md
+      - "Lesson 33 · Intro to Celery": 04-async-cicd/33-intro-to-celery.md
+      - "Lesson 34 · Caching with Redis": 04-async-cicd/34-caching-redis.md
+      - "Lesson 35 · Rate Limiting": 04-async-cicd/35-rate-limiting.md
+      - "Lesson 36 · Logging & Monitoring": 04-async-cicd/36-logging-monitoring.md
+      - "Lesson 37 · Testing with Pytest": 04-async-cicd/37-testing-pytest.md
+      - "Lesson 38 · CI with GitHub Actions": 04-async-cicd/38-ci-github-actions.md
+      - "Lesson 39 · Docker for Python APIs": 04-async-cicd/39-docker-python-apis.md
+      - "Lesson 40 · Deploying Flask/FastAPI": 04-async-cicd/40-deploying-flask-fastapi.md
+  - "🔒 Security":
+      - "Section Overview": 05-security/index.md
+      - "Lesson 41 · Securing Flask APIs": 05-security/41-securing-flask-apis.md
+      - "Lesson 42 · Securing FastAPI Apps": 05-security/42-securing-fastapi.md
+      - "Lesson 43 · Webhooks with Flask": 05-security/43-webhooks-flask.md
+      - "Lesson 44 · Webhooks with FastAPI": 05-security/44-webhooks-fastapi.md
+      - "Lesson 45 · RabbitMQ Queues": 05-security/45-rabbitmq-queues.md
+      - "Lesson 46 · Redis Pub/Sub": 05-security/46-redis-pubsub.md
+      - "Lesson 47 · Microservices Basics": 05-security/47-microservices-basics.md
+      - "Lesson 48 · Inter-Service Communication": 05-security/48-inter-service-comm.md
+      - "Lesson 49 · Load Testing with Locust": 05-security/49-load-testing-locust.md
+      - "Lesson 50 · API Gateway with FastAPI": 05-security/50-api-gateway-fastapi.md
+  - "🖥️ Frontend":
+      - "Section Overview": 06-frontend/index.md
+      - "Lesson 51 · Consuming APIs": 06-frontend/51-consuming-apis.md
+      - "Lesson 52 · Flask Frontend": 06-frontend/52-flask-frontend.md
+      - "Lesson 53 · FastAPI + JS Frontend": 06-frontend/53-fastapi-js-frontend.md
+      - "Lesson 54 · Streamlit Dashboard": 06-frontend/54-streamlit-dashboard.md
+      - "Lesson 55 · Flask Charts Dashboard": 06-frontend/55-flask-charts-dashboard.md
+      - "Lesson 56 · FastAPI + React": 06-frontend/56-fastapi-react.md
+      - "Lesson 57 · Flask CRUD Frontend": 06-frontend/57-flask-crud-frontend.md
+      - "Lesson 58 · FastAPI UI with Jinja2": 06-frontend/58-fastapi-jinja2-ui.md
+      - "Lesson 59 · Flask + AJAX": 06-frontend/59-flask-ajax.md
+      - "Lesson 60 · Streamlit Data Visualizer": 06-frontend/60-streamlit-visualizer.md
+  - "📊 Data APIs":
+      - "Section Overview": 07-data-apis/index.md
+      - "Lesson 61 · Data Analysis with Pandas": 07-data-apis/61-data-analysis-pandas.md
+      - "Lesson 62 · Exporting CSV & JSON": 07-data-apis/62-exporting-csv-json.md
+      - "Lesson 63 · REST API Visualization": 07-data-apis/63-rest-api-visualization.md
+      - "Lesson 64 · Matplotlib in APIs": 07-data-apis/64-matplotlib-in-apis.md
+      - "Lesson 65 · Plotly Dash": 07-data-apis/65-plotly-dash.md
+      - "Lesson 66 · CSV Uploader API": 07-data-apis/66-csv-uploader-api.md
+      - "Lesson 67 · Dataset Search API": 07-data-apis/67-dataset-search-api.md
+      - "Lesson 68 · JSON Report Generator": 07-data-apis/68-json-report-generator.md
+      - "Lesson 69 · Pandas to REST Pipeline": 07-data-apis/69-pandas-rest-pipeline.md
+      - "Lesson 70 · Complete Data Viz App": 07-data-apis/70-data-viz-complete.md
+  - "☁️ Cloud":
+      - "Section Overview": 08-cloud/index.md
+      - "Lesson 71 · Serverless API on AWS Lambda": 08-cloud/71-serverless-aws-lambda.md
+      - "Lesson 72 · Google Cloud Functions": 08-cloud/72-google-cloud-functions.md
+      - "Lesson 73 · Azure Functions": 08-cloud/73-azure-functions.md
+      - "Lesson 74 · Cloud Storage File API": 08-cloud/74-cloud-storage-api.md
+      - "Lesson 75 · Monitoring with Prometheus": 08-cloud/75-prometheus-monitoring.md
+      - "Lesson 76 · WebSocket API": 08-cloud/76-websocket-api.md
+      - "Lesson 77 · FastAPI + GraphQL": 08-cloud/77-fastapi-graphql.md
+      - "Lesson 78 · Payment Integration": 08-cloud/78-payment-integration.md
+      - "Lesson 79 · Social Login with OAuth": 08-cloud/79-social-login-oauth.md
+      - "Lesson 80 · Event-Driven Pub/Sub": 08-cloud/80-event-driven-pubsub.md
+  - "🧠 ML & AI":
+      - "Section Overview": 09-ml-ai/index.md
+      - "Lesson 81 · ML Model API": 09-ml-ai/81-ml-model-api.md
+      - "Lesson 82 · Flask + Scikit-Learn": 09-ml-ai/82-flask-sklearn-pipeline.md
+      - "Lesson 83 · Deploy ML with FastAPI": 09-ml-ai/83-deploy-ml-fastapi.md
+      - "Lesson 84 · Sentiment Analysis API": 09-ml-ai/84-sentiment-analysis-api.md
+      - "Lesson 85 · Image Classifier API": 09-ml-ai/85-image-classifier-api.md
+      - "Lesson 86 · Recommendation System": 09-ml-ai/86-recommendation-system.md
+      - "Lesson 87 · Time Series Forecasting": 09-ml-ai/87-time-series-forecasting.md
+      - "Lesson 88 · Anomaly Detection API": 09-ml-ai/88-anomaly-detection-api.md
+      - "Lesson 89 · AI Chatbot API": 09-ml-ai/89-ai-chatbot-api.md
+      - "Lesson 90 · MLOps Basics": 09-ml-ai/90-mlops-basics.md
+  - "🏢 Enterprise":
+      - "Section Overview": 10-enterprise/index.md
+      - "Lesson 91 · Multi-Tenant Architecture": 10-enterprise/91-multi-tenant-api.md
+      - "Lesson 92 · Role-Based Access Control": 10-enterprise/92-rbac-api.md
+      - "Lesson 93 · API Versioning": 10-enterprise/93-api-versioning.md
+      - "Lesson 94 · Async Task Queue": 10-enterprise/94-async-task-queue.md
+      - "Lesson 95 · Unified Logging & Tracing": 10-enterprise/95-logging-tracing.md
+      - "Lesson 96 · Health Check Endpoints": 10-enterprise/96-health-check-endpoints.md
+      - "Lesson 97 · Scalable API Deployment": 10-enterprise/97-scalable-deployment.md
+      - "Lesson 98 · End-to-End Web App": 10-enterprise/98-end-to-end-webapp.md
+      - "Lesson 99 · Realtime Dashboard": 10-enterprise/99-realtime-dashboard.md
+      - "Lesson 100 · Complete Portfolio Project": 10-enterprise/100-complete-portfolio.md
+  - About: about.md
+  - Contributing: contributing.md
